@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.farm.mapper.FarmInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wy.farm.entity.FarmInfo">
+        <id column="id" property="id" />
+        <result column="number" property="number" />
+        <result column="name" property="name" />
+        <result column="head_pic" property="headPic" />
+        <result column="bg_pic" property="bgPic" />
+        <result column="owner" property="owner" />
+        <result column="area" property="area" />
+        <result column="information" property="information" />
+        <result column="open" property="open" />
+        <result column="remark" property="remark" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, number, name, head_pic, bg_pic, owner, area, information, open, remark, create_time, update_time, deleted
+    </sql>
+
+</mapper>
