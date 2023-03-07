@@ -18,10 +18,20 @@ public interface UserService {
 
     /**
      * 用户登录接口
+     *
      * @param username 用户账号
      * @param password 用户密码
+     * @return 用户基本信息
      */
-    void login(String username, String password);
+    UserInfoRO login(String username, String password);
+
+    /**
+     * 手机号码登录
+     * @param phone 电话号码
+     * @param verifyCode 短信验证码
+     * @return 用户基本信息
+     */
+    UserInfoRO loginByPhone(String phone, String verifyCode);
 
     /**
      * 退出登录接口
